@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "term-paper"
+version = "0.1.0"
+description = ""
+authors = ["Kryazhov Roman <kryazhov.roman@mail.ru>"]
+readme = "README.md"
+packages = [{include = "term_paper"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
