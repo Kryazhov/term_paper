@@ -9,7 +9,7 @@ executed_operations = executed_operations(data)  # список успешных
 
 x = int(input('Введите количество операций для вывода, например 5: '))
 
-sorted_operations = sorted(executed_operations, key=lambda x: x.date, reverse=True)[:x]  # x последних операций
+sorted_operations = sorted(executed_operations, key=lambda x: x.date, reverse=True)[:x]  # x - кол-во последних операций
 
 print(printout(sorted_operations))
 

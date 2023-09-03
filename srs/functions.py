@@ -30,9 +30,9 @@ def printout(sorted_operations):
     for operation in sorted_operations:  # итерации по 5 последним успешным операциям
         if operation._from == None:  # если поле "откуда(from)" - None, не печатаем его вообще
             out += (f'\n{operation.date_conversion(operation.date)} {operation.description}\n'
-                         f'{operation.output_formatting(operation.to)}\n{operation.amount} {operation.name}\n')
+                    f'{operation.output_formatting(operation.to)}\n{operation.amount} {operation.name}\n')
         else:  # иначе выводим все поля
             out += (f'\n{operation.date_conversion(operation.date)} {operation.description}\n'
-                         f'{operation.output_formatting(operation._from)} -> {operation.output_formatting(operation.to)}\n'
-                         f'{operation.amount} {operation.name}\n')
+                    f'{operation.output_formatting(operation._from)} -> {operation.output_formatting(operation.to)}\n'
+                    f'{operation.amount} {operation.name}\n')
     return out
